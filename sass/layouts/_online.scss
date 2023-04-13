@@ -33,6 +33,11 @@
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
   transition: transform 250ms linear;
+
+  .online-item:focus+&,
+.online-item:not(:placeholder-shown)+& {
+  transform: translateY(-100%);
+}
 }
 
 .online-input {
@@ -47,38 +52,12 @@
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   outline: transparent;
   color: #F7F7F7;
-}
 
-.online-item:focus {
+  &:focus {
   border-color: #ffffff;
 }
 
-/* .online-item:focus + .online-label {
-  transform: translatey(-100%);
-color: #F7F7F7;
-} */
-
-
-
-.online-item:focus+.online-label,
-.online-item:not(:placeholder-shown)+.online-label {
-  transform: translateY(-100%);
 }
-
-
-
-/* .online-item:focus::placeholder {
-  color: #ffffff;
-}
-
-.online-item::placeholder {
-  font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.4);
-} */
 
 .online-text {
   width: 100%;

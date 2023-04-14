@@ -424,7 +424,7 @@ body {
 }
 .hero__title::before, .hero__title::after {
   content: "✂";
-  color: red;
+   color: red;
 }
 .hero__title:hover::before, .hero__title:hover:after {
   color: black;

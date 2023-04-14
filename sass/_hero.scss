@@ -58,11 +58,9 @@
   color: rgba(157, 164, 189, 0.6);
 
   &::before {
-  background-color: rgba(157, 164, 189, 0.6);
+    background-color: rgba(157, 164, 189, 0.6);
+  }
 }
-}
-
-
 
 .hero__title {
   margin-bottom: 20px;
@@ -77,15 +75,15 @@
 
   &::before,
   &::after {
-  content: '\2702';
-  color: red;
-}
+    content: '\2702';
+    color: red;
+  }
 
-&:hover::before,
-&:hover:after {
-  color: black;
-  transform: rotate(90deg);
-}
+  &:hover::before,
+  &:hover:after {
+    color: black;
+    transform: rotate(90deg);
+  }
 }
 
 .hero__bottom-text {
